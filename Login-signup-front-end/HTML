@@ -1,0 +1,81 @@
+<html>
+
+    <head>
+
+        <title>  Login & Registration </title>
+        <link rel="stylesheet" href="logintodo.css">
+
+    </head>
+
+    <body>
+
+        <img src="images/Login Background.png" id="image">
+        
+        <div id="Rectangle-Copy-4">
+            <h3 id="text"> Perfect Platform for Keeping a Check to To-Do List
+            </h3>
+
+            <img src="images/to-do-list.png" id="to-do-list">
+            <img src="images/pikachu.png" id="pikachu">        
+            <!-- <img src="images/bullbasaur.png" id="bulba">            -->
+
+        </div>
+        
+        <div id="Rectangle-Copy-3">
+            <div id="login-box">
+                <div id="button_scroll"> </div>
+                    <button type="button" class="toggle-btn" onclick="login()"> Log In</button>
+                    <button type="button" class="toggle-btn" onclick="register()"> Sign-Up</button>
+            </div>
+            <div id="sign-in">
+                
+            </div>
+
+            <form id="register" class="input">
+                <span id="username"> Username !!</span><input type="text"  class="input-field" placeholder="User-Id" required>
+                <span id="password">Password</span><input type="text" id="pass" class="input-field" placeholder="Password" required>
+                <span id="email">Email Address </span><input type="text" id="email" class="input-field" placeholder="E-mail" required>
+                <input type="checkbox" class="check-box"> <span> I Agree to the T&C</span>
+                <button type="submit" class="submit-btn">Register</button>
+            </form>
+
+            <form id="log" class="input">
+                <span id="username"> Username !!</span><input type="text"  class="input-field" placeholder="User-Id" required>
+                <span id="password">Password</span><input type="text" id="pass" class="input-field" placeholder="Password" required>
+                <input type="checkbox" class="check-box"> <span> Remember Password</span>
+                <button type="submit" class="submit-btn" id="log-text">Log-In</button>
+            </form>
+
+            
+        </div>
+                
+
+
+        <script>
+            var log_pg= document.getElementById("log");
+            var register_pg = document.getElementById("register");
+            var btn_scroll= document.getElementById("button_scroll");
+            var bulba_pok= document.getElementById("bulba");
+
+           function register(){
+               //alert("HI REGISTER");
+                log_pg.style.left= "-400px";
+                register_pg.style.left="60px";
+                btn_scroll.style.right="10px";
+                bulba_pok.style.left="-20px";
+
+            }
+
+            function login(){
+                //alert("HI LOGIN");
+                log_pg.style.left= "60px";
+                register_pg.style.left="760px";
+                btn_scroll.style.right="105px"
+                bulba_pok.style.right="20px";
+            }  
+        </script>
+
+
+    </body>
+
+</html>
