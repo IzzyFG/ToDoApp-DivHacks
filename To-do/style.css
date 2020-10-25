@@ -23,6 +23,7 @@
   outline: none;
   font-size: 18px;
   position: relative;
+  
 }
 
 h3{
@@ -37,12 +38,14 @@ h3{
   margin: 6px 0;
   overflow: hidden;
   position: relative;
+  
 }
 
 .task i{
   float: right;
   margin-left: 20px;
   cursor: pointer;
+  color: black;
 }
 
 .comp .task{
@@ -60,10 +63,58 @@ h3{
   width: 1440px;
   height: 1024px;
   border-radius: 30px;
-  background-color: #ffffff;
+  background-color: #0c0b0b;
 
   fill-opacity: 50%;
   float: center; 
   position: fixed;
   
   }
+  .profile 
+  {
+      min-height: 355px;
+      display: inline-block;
+  }
+  
+  .userIcon{
+    background: white;
+    width: 100px;
+    margin-right: 10px;
+    border-radius:50%;
+    display:inline-block;
+  }
+  #Background {
+    width: 650px;
+    height: 220px;
+    background-color: #1b3e5f;
+    position: absolute;
+    overflow: hidden;
+
+}
+body {
+  color: white;
+}
+
+.open-button {
+  background-color: #555;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  opacity: 0.8;
+  position: fixed;
+  bottom: 23px;
+  right: 28px;
+  width: 280px;
+}
+
+.form-container .btn {
+  background-color: #4CAF50;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  margin-bottom:10px;
+  opacity: 0.8;
+}
