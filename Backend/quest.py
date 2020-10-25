@@ -3,7 +3,7 @@ Created on Oct 24, 2020
 
 @author: Linda and Ileen
 '''
-class Quest():
+class Quest:
     
     '''Construct a Quest with a description, exp, and status'''
     def __init__(self, description = "", exp = 0 , status = False):
@@ -23,6 +23,6 @@ class Quest():
     def get_status(self):
         return self.status
     
-    '''Change status of the quest to True after the user has completing the task'''
+    '''Change status of the quest to True/False after the user has completing/readded the task'''
     def change_status(self):
-        self.status = True
+        self.status = not self.status
