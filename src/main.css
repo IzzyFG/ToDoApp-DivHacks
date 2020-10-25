@@ -1,1 +1,23 @@
-@charset "ISO-8859-1";
+#Background {
+    width: 900px;
+    height: 720px;
+    background-color: #1b3e5f;
+    position: absolute;
+    overflow: hidden;
+}
+body {
+  color: white;
+}
+.profile 
+{
+    min-height: 355px;
+    display: inline-block;
+}
+
+.userIcon{
+	background: white;
+	width: 100px;
+	margin-right: 10px;
+	border-radius:50%;
+	display:inline-block;
+}
